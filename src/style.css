@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 935px;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-phone {
+    width: 30%;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-phone img {
+    height: 48rem;
+}
+
+.instagram-login {
+    width: 350px;
+    min-height: 45rem;
+    margin-top: 4em;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.group {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    padding: 1.3em 0;
+    margin: 0 0 0.75em;
+}
+
+.instagram-logo {
+    margin-top: 2.5em;
+    margin-bottom: 0.85em;
+    height: 3.5rem;
+}
+
+.login-form { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.form-field {
+    width: 80%;
+    min-height: 2.5rem;
+    padding: 0 10px;
+    margin-bottom: 6px;
+    background-color: #fafafa;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.btn {
+    width: 80%;
+    padding: 5px 0;
+    margin: 8px 0;
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    transform: translateY(-2.5px);
+    opacity: 0.5;
+}
+
+.separator {
+    color: #8e8e8e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 18px;
+    width: 80%;
+}
+
+.separator .line {
+    width: 45%;
+    height: 1px;
+    background-color: lightgray;
+}
+
+.separator .content {
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+.facebook-login {
+    display: flex;
+    align-items: center;
+    color: #00376b;
+    margin: 8px 0;
+}
+
+.facebook-login img {
+    max-width: 1rem;
+    margin-right: 10px;
+}
+
+.forgot-password {
+    color: #262626;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.blue-link {
+    color: #0095f6;
+    font-weight: 600;
+}
+
+.get-the-app {
+    width: 100%;
+    padding: 1.3em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.download {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+}
+
+.app-download {
+    width: 10rem;
+    height: 3rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('imgs/appstore-download.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('imgs/googleplay-download.png');
+}
+
+/* media queries */
+
+@media (max-width: 935px) {
+
+    .instagram-phone {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .instagram-login {
+        width: 75%;
+    }
+
+    .group {
+        background: none;
+        border: none;
+    }
+
+    .download {
+        flex-direction: column;
+    }
+    
+    .app-download {
+        margin-bottom: 10px;
+    }
+
+}
